@@ -64,6 +64,6 @@
    * Se esta utilizando la version 1.18.5
  
  * Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida     para confirmar.
-  * Se utilizaron los 2 nucleos y 4 hilos que posee el procesador.
+   * Se utilizaron los 2 nucleos y 4 hilos que posee el procesador.
   ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/Uso_procesador_Desempe%C3%B1o_MATMUL.png?raw=true)
   
