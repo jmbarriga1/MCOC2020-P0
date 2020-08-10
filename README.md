@@ -68,3 +68,4 @@
 * Numero de hilos: 4
 * Memoria: 8 GB DDR3
 * 1 disco duro
+https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic.png
