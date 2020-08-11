@@ -2,7 +2,7 @@
 
 # Mi Computador
 # Mi computador principal
-* Marca/modelo:  300E5EV/300E4EV/270E5EV/270
+* Marca/modelo:  SAMSUNG 300E5EV/300E4EV/270E5EV/270
 * Tipo: Notebook
 * Año adquisición: 2013
 * Procesador:
@@ -47,6 +47,7 @@
 * 1 disco duro
 
 # Desempeño MATMUL
+
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic.png?raw=true)
 * ¿Como difiere del gráfico del profesor/ayudante?
   * Mi grafico se diferencia al del profesor/ayudante  en que el tiempo en multiplicar las matrices de mi computador es significativamente menor al del profesor/ayudante, tambien se pude apreciar en el grafico de memory vs matrix size que la curva es lineal y muy parecida a la del grafico del profesor/ayudante.
@@ -66,4 +67,9 @@
  * Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida     para confirmar.
    * Se utilizaron los 2 nucleos y 4 hilos que posee el procesador.
   ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/Uso_procesador_Desempe%C3%B1o_MATMUL.png?raw=true)
+  
+  # Desempeño MIMATMUL
+  
+  ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphicmimatmul.png?raw=true)
+  
   
