@@ -50,7 +50,7 @@
 
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic.png?raw=true)
 * ¿Como difiere del gráfico del profesor/ayudante?
-  * Mi grafico se diferencia al del profesor/ayudante  en que el tiempo en multiplicar las matrices de mi computador es significativamente menor al del profesor/ayudante, tambien se pude apreciar en el grafico de memory vs matrix size que la curva es lineal y muy parecida a la del grafico del profesor/ayudante.
+  * Mi grafico se diferencia al del profesor/ayudante  en que el tiempo en multiplicar las matrices de mi computador es significativamente menor al del profesor/ayudante, tambien se pude apreciar en el grafico de memory vs matrix size que la curva es lineal y muy parecida a la del grafico del profesor/ayudante.La maxima matriz que se logro hacer fue de 3000X3000.
  
 * ¿A qué se pueden deber las diferencias?
   * Las diferencias se deben a que los porcesadores son diferentes.
@@ -72,4 +72,21 @@
   
   ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphicmimatmul.png?raw=true)
   
+* ¿Como difiere del gráfico del profesor/ayudante?
+  * Mi grafico se diferencia al del profesor/ayudante  en que el tiempo en multiplicar las matrices de mi computador es significativamente menor al del profesor/ayudante, tambien se pude apreciar en el grafico de memory vs matrix size que la curva es lineal y muy parecida a la del grafico del profesor/ayudante. La maxima matriz que se logro hacer fue de 250X250.
+
+* ¿A qué se pueden deber las diferencias?
+  * Las diferencias se deben a que los porcesadores son diferentes y a su vez que al utilizar la funcion creada el procesador hace un mayor esfuerzo por hacer las iteraciones.
   
+* El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?
+  * Esto se debe a que el tamaño de matriz y el uso de la cantidad de memoria es una función lineal, en cambio el tiempo de demora se da por la multiplicacion de matrices lo cual no es lineal.
+
+* ¿Qué versión de python está usando?
+   * Se esta utilizando la version 3.8.
+  
+* ¿Qué versión de numpy está usando?
+   * Se esta utilizando la version 1.18.5
+
+* Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida     para confirmar.
+   * Se utilizaron los 2 nucleos y 4 hilos que posee el procesador.
+![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/Uso_procesador_Desempe%C3%B1o_MIMATMUL.png?raw=true)
