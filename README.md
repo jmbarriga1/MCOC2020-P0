@@ -73,7 +73,7 @@
   ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphicmimatmul.png?raw=true)
   
 * ¿Como difiere del gráfico del profesor/ayudante?
-  * Mi grafico se diferencia al del profesor/ayudante  en que el tiempo en multiplicar las matrices de mi computador es significativamente menor al del profesor/ayudante, tambien se pude apreciar en el grafico de memory vs matrix size que la curva es lineal y muy parecida a la del grafico del profesor/ayudante. La maxima matriz que se logro hacer fue de 250X250.
+  * Mi grafico se diferencia al del profesor/ayudante  en que el tiempo va en aumento en distinta proporcion al del profesor/ayudante, tambien se pude apreciar en el grafico de memory vs matrix size que la curva es lineal y muy parecida a la del grafico del profesor/ayudante. La maxima matriz que se logro hacer fue de 250X250.
 
 * ¿A qué se pueden deber las diferencias?
   * Las diferencias se deben a que los porcesadores son diferentes y a su vez que al utilizar la funcion creada el procesador hace un mayor esfuerzo por hacer las iteraciones.
