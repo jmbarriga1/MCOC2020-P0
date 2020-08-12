@@ -22,8 +22,8 @@ for i in range(N_corridas):
         A = rand(N, N)
         B = rand(N, N)
         
-        C = A@B
         t1 = perf_counter()
+        C = A@B
         t2 = perf_counter()
         dt = t2 - t1
         mem = 3*(N**2)*8
