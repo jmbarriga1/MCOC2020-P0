@@ -29,9 +29,9 @@ for i in range(N_corridas):
         print(f"N = {N}")
         A = rand(N, N)
         B = rand(N, N)
-        
-        C = mimatmul(A, B)
+       
         t1 = perf_counter()
+        C = mimatmul(A, B)
         t2 = perf_counter()
         dt = t2 - t1
         mem = 3*(N**2)*8
