@@ -147,7 +147,4 @@
 
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic_inv_caso_3_longdouble.png?raw=true)
 
-* ¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)?
-  * 
-* ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso? 
-  * 
+
