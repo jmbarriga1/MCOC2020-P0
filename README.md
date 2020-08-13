@@ -96,41 +96,53 @@
 # Caso 1: numpy.linalg.inv()
 
 * np.half 
+
 -ERROR: ARRAY TYPE FLOAT16 UNSUPPORTED IN LINALG
 
 * np.single
+
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic_inv_caso_1_single.png?raw=true)
 
 * np.double
+
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic_inv_caso_1_double.png?raw=true)
 
 * np.longdouble
+
 -ERROR: ARRAY TYPE FLOAT16 UNSUPPORTED IN LINALG
 
 # Caso 2: scipy.linalg.inv(overwrite_a=False)
 
 * np.half 
+
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic_inv_caso_2_half.png?raw=true)
 
 * np.single
+
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic_inv_caso_2_single.png?raw=true)
 
 * np.double
+
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic_inv_caso_2_double.png?raw=true)
 
 * np.longdouble
+
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic_inv_caso_2_longdouble.png?raw=true)
 
 # Caso 3: scipy.linalg.inv(overwrite_a=True)
 
 * np.half 
+
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic_inv_caso_3_half.png?raw=true)
 
 * np.single
+
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic_inv_caso_3_single.png?raw=true)
 
 * np.double
+
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic_inv_caso_3_double.png?raw=true)
 
 * np.longdouble
+
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic_inv_caso_3_longdouble.png?raw=true)
