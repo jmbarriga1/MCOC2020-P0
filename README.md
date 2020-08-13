@@ -147,4 +147,16 @@
 
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic_inv_caso_3_longdouble.png?raw=true)
 
+* ¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)?
+  * El algoritmo de inversión que se utiliza creo que se debiera comenzar construyendo una matriz de N x N con la matriz A .
+Luego a través de operaciones elementales de filas, se convierte las filas y columnas de la matriz A en la matriz identidad I. La matriz en la que se convierta lo que iniciamos como matriz identidad, será la matriz inversa de A.
+Una vez tengamos la matriz A/I  se sigue a crear a la derecha la operación elemental que nos vaya convirtiendo la matriz A en una matriz escalonada.
+Luego que A esté escalonada se diagonaliza de una manera similar.
+Se Inicia haciendo operaciones E para que a21=0, Luego para que a31= 0 y luego que a32 = 0. Y asi sucesivamente hasta llegar a la matriz inversa.
+
+* ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso? (Ver clase 10 Agosto)
+  * El paralelismo y la estructura de cache de mi procesador incide en la cantidad de tiempo que demora en hacer las operaciones, también hay que tener en cuenta los tipos de datos y el lenguaje para el desempeño del procesador. Por lo tanto si se esta dispuesto a perder precisión hay que disminuir la memoria, si se tiene un gran problema hay que evaluar utilizar tipos de datos mas chicos.
+Hay que tener en cuenta el hardware para el rendimiento del procesador, ya que es el problema principal de que se demore mas tiempo en resolver lo que se le pide.
+En primer lugar lo mas lento es un disco duro, luego mas rápido es un disco SSD y lo mas rápido es la memoria RAM. Cuando se excede la memoria RAM el computador quiere seguir trabajando por lo que va haciendo paginación, se refiere a que se hagarran pedasos de memoria para trabajar sobre la memoria que se utilizo.	
+En mi caso se produce esto por lo que me veo obligado a hacer operaciones mas pequeñas por el tiempo que se demora en resolverlas.
 
