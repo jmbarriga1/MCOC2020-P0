@@ -160,3 +160,6 @@ Hay que tener en cuenta el hardware para el rendimiento del procesador, ya que e
 En primer lugar lo mas lento es un disco duro, luego mas rápido es un disco SSD y lo mas rápido es la memoria RAM. Cuando se excede la memoria RAM el computador quiere seguir trabajando por lo que va haciendo paginación, se refiere a que se hagarran pedasos de memoria para trabajar sobre la memoria que se utilizo.	
 En mi caso se produce esto por lo que me veo obligado a hacer operaciones mas pequeñas por el tiempo que se demora en resolverlas.
 
+# Entrega 6
+
+![alt text]![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic_inv_caso_3_double.png?raw=true)
