@@ -162,4 +162,4 @@ En mi caso se produce esto por lo que me veo obligado a hacer operaciones mas pe
 
 # Entrega 6
 
-![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic_inv_caso_3_double.png?raw=true)
+![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/Entrega%206/Performance%20graphic%20Entrega%206.png?raw=true)
