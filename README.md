@@ -161,5 +161,9 @@ En mi caso se produce esto por lo que me veo obligado a hacer operaciones mas pe
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/Entrega%206/Performance%20graphic%20Entrega%206.png?raw=true)
 
 * En el grafico  arrojado por la programación hecha se puede apreciar que la performance hasta matrices de 30X30 fue mejor y mas eficiente en el caso de "Numpy Solve" y "Scipy Solve pos". Luego el tiempo de demora con el modulo de "Scipy Solve pos" va en aumento hasta llegar a ser el modulo que mas demora en resolverce cuando la matriz es de 4000X4000 y aumentando.
-Se puede apreciar que el metodo mas eficiente para realizar la inversion de matrices es de "Numpy Solve" y el menos eficiente termina siendo el de "Scipy Solve pos".
-Tambien se puede ver que la performance de "Scipy Solve", "Scipy Solve symmetric" y "Scipy Solve pos overwrite" son bastante similares hasta las matrices de 100X100, luego de esto "Scipy Solve symmetric" comienza a tener menor eficiencia y "Scipy Solve pos overwrite" tene mejor eficiencia que los demas modos, en el caso de "Scipy Solve pos overwrite" tiene una peor eficiencia en un comienzo debido a que invierte tiempo en hacer análisis para matrices  pequeñas y eso le retrasa los calculos, ya que analiza la simetria y positividad, esto a raiz que la matriz es mas grande comienza a optimizar los calculos lo que alfinal lo hace mas eficiente.
+
+* Se puede apreciar que el metodo mas eficiente para realizar la inversion de matrices es de "Numpy Solve" y el menos eficiente termina siendo el de "Scipy Solve pos".
+
+* Tambien se puede ver que la performance de "Scipy Solve", "Scipy Solve symmetric" y "Scipy Solve pos overwrite" son bastante similares hasta las matrices de 100X100, luego de esto "Scipy Solve symmetric" comienza a tener menor eficiencia y "Scipy Solve pos overwrite" tene mejor eficiencia que los demas modos, en el caso de "Scipy Solve pos overwrite" tiene una peor eficiencia en un comienzo debido a que invierte tiempo en hacer análisis para matrices  pequeñas y eso le retrasa los calculos, ya que analiza la simetria y positividad, esto a raiz que la matriz es mas grande comienza a optimizar los calculos lo que alfinal lo hace mas eficiente.
+
+* La matriz  se hizo hasta 4000X4000 debido a que el tiempo en hacer las operaciones era extremadamente largo.
