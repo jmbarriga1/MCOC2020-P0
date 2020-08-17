@@ -148,11 +148,7 @@
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/graphic_inv_caso_3_longdouble.png?raw=true)
 
 * ¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)?
-  * El algoritmo de inversión que se utiliza creo que se debiera comenzar construyendo una matriz de N x N con la matriz A .
-Luego a través de operaciones elementales de filas, se convierte las filas y columnas de la matriz A en la matriz identidad I. La matriz en la que se convierta lo que iniciamos como matriz identidad, será la matriz inversa de A.
-Una vez tengamos la matriz A/I  se sigue a crear a la derecha la operación elemental que nos vaya convirtiendo la matriz A en una matriz escalonada.
-Luego que A esté escalonada se diagonaliza de una manera similar.
-Se Inicia haciendo operaciones E para que a21=0, Luego para que a31= 0 y luego que a32 = 0. Y asi sucesivamente hasta llegar a la matriz inversa.
+  * Segu lo investigado se utiliza la solución analítica, de la regla de Cramer y teorema de Laplace, que basa el calculo del determinante de matrices grandes en la descomposición de sumas de matrices más pequeñas para llegar al resultado esperado.
 
 * ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso? (Ver clase 10 Agosto)
   * El paralelismo y la estructura de cache de mi procesador incide en la cantidad de tiempo que demora en hacer las operaciones, también hay que tener en cuenta los tipos de datos y el lenguaje para el desempeño del procesador. Por lo tanto si se esta dispuesto a perder precisión hay que disminuir la memoria, si se tiene un gran problema hay que evaluar utilizar tipos de datos mas chicos.
@@ -163,3 +159,7 @@ En mi caso se produce esto por lo que me veo obligado a hacer operaciones mas pe
 # Entrega 6
 
 ![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/Entrega%206/Performance%20graphic%20Entrega%206.png?raw=true)
+
+* En el grafico  arrojado por la programación hecha se puede apreciar que la performance hasta matrices de 30X30 fue mejor y mas eficiente en el caso de "Numpy Solve" y "Scipy Solve pos". Luego el tiempo de demora con el modulo de "Scipy Solve pos" va en aumento hasta llegar a ser el modulo que mas demora en resolverce cuando la matriz es de 4000X4000 y aumentando.
+Se puede apreciar que el metodo mas eficiente para realizar la inversion de matrices es de "Numpy Solve" y el menos eficiente termina siendo el de "Scipy Solve pos".
+Tambien se puede ver que la performance de "Scipy Solve", "Scipy Solve symmetric" y "Scipy Solve pos overwrite" son bastante similares hasta las matrices de 100X100, luego de esto "Scipy Solve symmetric" comienza a tener menor eficiencia y "Scipy Solve pos overwrite" tene mejor eficiencia que los demas modos, en el caso de "Scipy Solve pos overwrite" tiene una peor eficiencia en un comienzo debido a que invierte tiempo en hacer análisis para matrices  pequeñas y eso le retrasa los calculos, ya que analiza la simetria y positividad, esto a raiz que la matriz es mas grande comienza a optimizar los calculos lo que alfinal lo hace mas eficiente.
