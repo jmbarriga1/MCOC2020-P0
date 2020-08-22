@@ -167,3 +167,54 @@ En mi caso se produce esto por lo que me veo obligado a hacer operaciones mas pe
 * Tambien se puede ver que la performance de "Scipy Solve", "Scipy Solve symmetric" y "Scipy Solve pos overwrite" son bastante similares hasta las matrices de 100X100, luego de esto "Scipy Solve symmetric" comienza a tener menor eficiencia y "Scipy Solve pos overwrite" tene mejor eficiencia que los demas modos, en el caso de "Scipy Solve pos overwrite" tiene una peor eficiencia en un comienzo debido a que invierte tiempo en hacer análisis para matrices  pequeñas y eso le retrasa los calculos, ya que analiza la simetria y positividad, esto a raiz que la matriz es mas grande comienza a optimizar los calculos lo que alfinal lo hace mas eficiente.
 
 * La matriz  se hizo hasta 4000X4000 debido a que el tiempo en hacer las operaciones era extremadamente largo.
+
+# MATRICES DISPERSAS Y COMPLEJIDAD COMPUTACIONAL
+* INV_dispersa
+
+![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/Entrega%207%20r/graphic_INV_dispersaDEF.png?raw=true)
+
+* INV_llena
+
+![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/Entrega%207%20r/graphic_INV_llenaDEF.png?raw=true)
+
+* MATMUL_dispersa
+
+![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/Entrega%207%20r/graphic_MATMUL_dispersaDEF.png?raw=true)
+
+* MATMUL_llena
+
+![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/Entrega%207%20r/graphic_MATMUL_llenaDEF.png?raw=true)
+
+* SOLVE_dispersa
+
+![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/Entrega%207%20r/graphic_SOLVE_dispersaDEF.png?raw=true)
+
+* SOLVE_llena
+
+![alt text](https://github.com/jmbarriga1/MCOC2020-P0/blob/master/Entrega%207%20r/graphic_SOLVE_llenaDEF.png?raw=true)
+
+
+* Comente las diferencias que ve en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.
+  * Se puede apreciar que en los casos cuando se hizo con matriz dispersa demostro ser mas eficiente que con matrices laplacianas llenas. Esto se debe a que cuando se hace con matrices laplacianas dispersas no hay multiplicación entre ceros por lo tanto no se pierde tiempo. En conclusión, se puede decir que es mas eficiente la utilizacion de matrices dispersas.
+   
+* ¿Cual parece la complejidad asintótica (para N → ∞) para el ensamblado y solución en ambos casos y porqué? 
+  * Se puede notar que en todos los casos la matriz llena con la dispersa tienen un tiempo de ensamblado que tiende a N^2. Por otro lado, la solución para la matriz llena tiende a N^3 mientras que la matriz dispersa tienda a N. Esto habla sobre la eficiencia de las matrices dispersas para resolver los algoritmos.
+  
+* ¿Como afecta el tamaño de las matrices al comportamiento aparente?
+  * En matrices dispersas no afecta notablemente el rendimiento debido a que no hace operaciones entre ceros, en cambio en matrices llenas si se ve una variacion significativa debido a que el algoritmo si hace las operaciones con ceros.
+
+* ¿Qué tan estables son las corridas (se parecen todas entre si siempre, nunca, en un rango)? 
+  * Se puede ver en los graficos que las matrices dispersas son mas estables que las matrices llenas ya que a lo largo del algoritmo, si bien aumenta el numero de matrices que se desarrollan el tiempo no variara mucho. En cambio para las matrices llenas varia notablemente.
+  
+* Las funciones de matrices Laplacianas son las siguientes.
+
+import numpy as np
+def matriz_laplaciana_llena(N, type=np.float32):
+    e= np.eye(N) - np.eye(N,N,1)
+    return type(e+e.T)
+
+from scipy.sparse import eye
+
+def matriz_laplaciana_dispersa(N,t=np.float32):
+    e=eye(N,N,dtype=t)-eye(N,N,1,dtype=t)
+    return e+e.T 
