@@ -210,12 +210,14 @@ En mi caso se produce esto por lo que me veo obligado a hacer operaciones mas pe
 
 
 import numpy as np
+
 def matriz_laplaciana_llena(N, type=np.float32):
 
     e= np.eye(N) - np.eye(N,N,1)
     return type(e+e.T)
 
 from scipy.sparse import eye
+
 def matriz_laplaciana_dispersa(N,t=np.float32):
 
     e=eye(N,N,dtype=t)-eye(N,N,1,dtype=t)
